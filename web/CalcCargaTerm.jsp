@@ -13,6 +13,13 @@
         <title>Calculo de carga térmica</title>
     </head>
     <body>
+        <form>
+        <div id="dimensiones">
+            <h2>ingrese las dimensiones de la sala</h2>
+            Alto: <input type="text"><br>
+            Ancho: <input type="text"><br>
+            Fondo: <input type="text"><br>
+        </div>
         <div id="pasoA">
             <h2>Ingresar datos de la empresa</h2>
             Nombre de la empresa: <input type="text"><br>
@@ -46,155 +53,155 @@
                 <tr>
                     <th>1</th>
                     <td>AREA DEL PISO</td>
-                    <td>     </td>
-                    <td>     </td>
-                    <td>     </td>
-                    <td>     </td>
-                    <td>     </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>2</th>
                     <td>VOLUMEN DEL RECINTO</td>
-                    <td>    </td>
-                    <td>    </td>
-                    <td>    </td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>3</th>
                     <td>VENTANA LADO SUR O ESTE</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td>NA</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>3</th>
                     <td>VENTANA LADO SUROESTE</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td>NA</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>3</th>
                     <td>VENTANA LADO OESTE</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td>na</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>3</th>
                     <td>VENTANA LADO NORESTE O SUROESTE</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td>NA</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>4</th>
                     <td>AREA DEL RESTO DE LAS VENTANAS</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                     <td>NA</td>
-                    <td>    </td>
-                    <td>    </td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>5</th>
                     <td>AREA DE LA PARED UTILIZADA EN EL PUNTO 3 (NO INCLUIR LA DIMENSIÓN DE LA VENTANA)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>6</th>
                     <td>AREA DEL RESTO DE LAS PAREDES EXTERIORES (NO INCLUIR LA DIMENSION DE LA VENTANA)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>7</th>
                     <td>AREA DE TODAS LAS PAREDES ADYACENTES A UN RECINTO NO ACONDICIONADO</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>8</th>
                     <td>TECHO CON CONSTRUCCIÓN ARRIBA SIN ACONDICIONAR</td>
                     <td>NA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>8</th>
                     <td>TECHO CON PLAFON NO AISLADO</td>
                     <td>NA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>8</th>
                     <td>NA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>8</th>
                     <td>TECHADO CON PLAFON Y 50 mm. (2") O MÁS DE AISLAMIENTO</td>
                     <td>NA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>8</th>
                     <td>TECHADO NO AISLADO</td>
                     <td>NA</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>9</th>
                     <td>NUM. DE PERSONAS DENTRO DEL RECINTO</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
                 <tr>
                     <th>10</th>
                     <td>LUZ Y EQUIPOS ELECTRICOS EN USO (WATTS)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
                 </tr>
 
             </table>
@@ -206,5 +213,6 @@
             <a href="#">24000 BTU</a>
             <a href="#">36000 BTU</a>
         </div>
+         </form>    
     </body>
 </html>
