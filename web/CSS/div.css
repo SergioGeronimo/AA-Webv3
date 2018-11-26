@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-nov-2018, 2:41:26
+    Author     : Sergio_Gerónimo_González
+*/
+
+
+div{
+    padding: 50px;
+    margin: 50px;
+    border: solid magenta 1px; /*<--------------------------------------recuerda borrar esto*/
+    vertical-align: middle;
+   
+}
+
+div.dimensionesRow{
+    display: flex;
+    width: auto;
+}
+
+div.dimensionesColumna{
+
+    flex: 50%;
+    float: left;
+    width: 50%;
+    
+} 
+div.buttonList{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+div.calc{
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+div.formTable{
+    background: inherit;
+    margin: inherit;
+    
+}
+
+div.calc:hover{
+    
+    background-color: #c6c6c6;
+}
+
+div.buttonNav{
+    margin: 0px;
+    padding: 0px;
+}
+
+div h3, div.buttonNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

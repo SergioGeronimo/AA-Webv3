@@ -9,67 +9,107 @@ and open the template in the editor.
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900');
 
+
 *{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #2e477b;
+    font-family: 'Montserrat', sans-serif;   
     font: solid black;
 }
+
+
 div, select, option, input, a{
     background-color: white;
+    vertical-align: middle;
 }
 
-input{
-    border: solid black 1px;
-    border-color: #2e477b;
-    border-radius: 3px;
+body{
+    background-color: #2e477b;
 }
+
 
 
 h1, h2{
+    
     color: #d23653;
 }
+
+
+
 div.header, h1.header{
     background-color: transparent;
     position: sticky;
     top: 0px;
-    padding-bottom: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
 a.toIndex{
     background: none;
     text-decoration: none;
 }
-a.toIndex:hover{
-    color: white;
-    
-}
 
 a.toIndex:visited{
     color: #d23653;
 }
 
+a.toIndex:hover{
+    color: #96d1f0;
+    text-decoration: underline;
+    text-shadow: 3px 2px #d23653;
+}
+
 h1{
+    padding-left: 50px;
+    font-size: 3em;
     font-weight: 900;
 }
 table, th, td{
-    border: solid black 1px;
-    background: white;
+    border: solid gold 1px;
+    background: inherit;
 }
 
-div{
-    margin: 10px;
-}
 
-button{
-    background: white;
-    border: 1px;
-    border-color: #2e477b;
+input, select{
+    border: 1px solid #2e477b;
     border-radius: 3px;
+    background-color: white;
+    width: 100%;
+    vertical-align: middle;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover{
-    color:white;
-    border: none;
-    background: #d23653;
+input:focus{
+    
+    background-color: #96d1f0;
+    
+}
+
+img.roomIcon{
+    display: block;
+    
+    margin: auto;
+    padding: auto;
+    width: 250px;
+    left: 50%;
+    top: auto;
+    
+}
+
+table.form{
+    width: 100%;
+    padding: 10px;
+}
+
+table.form td{
+    padding: 10px;
+}
+
+input, select{
+    background: inherit;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
