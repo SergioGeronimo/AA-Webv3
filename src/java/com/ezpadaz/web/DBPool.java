@@ -19,11 +19,12 @@ public class DBPool {
     private static DBPool dataSource;
     private  ComboPooledDataSource cpds;
     
+    //pls change details
     private DBPool() {
       try {
          cpds = new ComboPooledDataSource();
          cpds.setDriverClass("com.mysql.cj.jdbc.Driver");
-         cpds.setJdbcUrl("jdbc:mysql://localhost:3306/mydb");
+         cpds.setJdbcUrl("jdbc:mysql://localhost:3306/aire_acondicionado");
          cpds.setUser("root");
          cpds.setPassword("");
          
