@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-nov-2018, 17:52:30
+    Author     : Sergio_Gerónimo_González
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #2e477b;
+    font: solid black;
+}
+div, select, option, input, a{
+    background-color: white;
+}
+
+input{
+    border: solid black 1px;
+    border-color: #2e477b;
+    border-radius: 3px;
+}
+
+
+h1, h2{
+    color: #d23653;
+}
+div.header, h1.header{
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+a.toIndex{
+    background: none;
+    text-decoration: none;
+}
+a.toIndex:hover{
+    color: white;
+    
+}
+
+a.toIndex:visited{
+    color: #d23653;
+}
+
+h1{
+    font-weight: 900;
+}
+table, th, td{
+    border: solid black 1px;
+    background: white;
+}
+
+div{
+    margin: 10px;
+}
+
+button{
+    background: white;
+    border: 1px;
+    border-color: #2e477b;
+    border-radius: 3px;
+}
+
+button:hover{
+    color:white;
+    border: none;
+    background: #d23653;
+}

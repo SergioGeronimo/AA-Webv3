@@ -1,18 +1,35 @@
-<%-- 
-    Document   : CalcConsElect
-    Created on : 25-nov-2018, 17:31:26
-    Author     : Sergio_GerÃ³nimo_GonzÃ¡lez
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>TODO supply a title</title>
-        <meta charset="UTF-8">
+        
+        <meta pageEncoding="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" href="CSS/prueba.css">
     </head>
     <body>
+        
+        <div>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td> DATOS DE FACTURACIÓN ELÉCTRICA </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Precio promedio tarifa ($/KWh): </td>
+                        <td> <input type="text" name="precioTarifa"> </td>
+                        <td> Tarifa </td>
+                        <td>
+                            <select>
+                                <option value="Om"> OM </option>
+                                <option value="HM"> HM </option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
         
         <div>        
         <form method="post">
@@ -57,7 +74,7 @@
                 </TR>             
                 
                 <TR>
-                    <TD> TensiÃ³n: </TD>
+                    <TD> Tensión: </TD>
                     <TD> <input type="text" name="tension"> </TD>
                     <TD> V </TD>
                 </TR>
@@ -88,9 +105,9 @@
                  
                 <th colspan="3"> Mantenimiento </th>
                 <tr>
-                    <td> AntigÃ¼edad: </td>
+                    <td> Antigüedad: </td>
                     <td> <input type="text" name="age"> </td>
-                    <td> AÃ±os </td>
+                    <td> Años </td>
                 </tr>
                 
                 <tr>
@@ -99,18 +116,18 @@
                 </tr>
                 
                 <tr>
-                    <td> Ciclo de operaciÃ³n: </td>
+                    <td> Ciclo de operación: </td>
                     <td> <input type="text" name="cicloOperacion"> </td>
-                    <td> [horas/dÃ­a] </td>
+                    <td> [horas/día] </td>
                 </tr>
                 
                 <tr>
-                    <td> DÃ­as de operacion al aÃ±o: </td>
+                    <td> Días de operacion al año: </td>
                     <td colspan="2"> <input type="text" name="diasOperacion"> </td>
                 </tr>
                 
                 <tr>
-                    <td> Â¿Existe programa de mantenimiento? </td>
+                    <td> ¿Existe programa de mantenimiento? </td>
                     <td>
                         <select>
                             <option value="Si"> Si </option>
@@ -150,7 +167,7 @@
                     </tr>
                     
                     <tr>
-                        <th colspan="9">ElÃ©ctricas</th>
+                        <th colspan="9">Eléctricas</th>
                     </tr>
                     
                     <tr>
@@ -166,10 +183,10 @@
                     </tr>
                     
                     <tr>
-                        <td>MediciÃ³n</td>
+                        <td>Medición</td>
                         <td colspan="4">Potencia[KW]</td>
                         <td>Consumo estimado</td>
-                        <td>Ahorro por equipo sucio o antigÃ¼o</td>
+                        <td>Ahorro por equipo sucio o antigúo</td>
                         <td>Ahorro energetico mensual con equipo limpio</td>
                         <td>Ahorro economico mensual con equipo limpio</td>
                         <td>Costo mensual usando inverter</td>
@@ -235,4 +252,3 @@
         
     </body>
 </html>
-

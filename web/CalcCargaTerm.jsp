@@ -9,13 +9,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="CSS/prueba.css">
+        <link rel="stylesheet" href="CSS/cargaTerm.css">
         <title>Calculo de carga térmica</title>
     </head>
     <body>
+        
+            <div class="header">
+                <h1 class="title"><a class="toIndex" href="index.jsp"> AERE</a></h1>
+            </div>
+        
         <form>
         <div id="dimensiones">
-            <h2>ingrese las dimensiones de la sala</h2>
+            <h2>Ingrese las dimensiones de la sala</h2>
             Alto: <input type="text"><br>
             Ancho: <input type="text"><br>
             Fondo: <input type="text"><br>
@@ -208,10 +213,10 @@
         </div>
         <div id="pasoD">
         <h2>Clic el equipo inverter de acuerdo a los BTU calculados para acceder a los modelos</h2>
-            <a href="#">12000 BTU</a>
-            <a href="#">18000 BTU</a>
-            <a href="#">24000 BTU</a>
-            <a href="#">36000 BTU</a>
+            <button type="button" onclic="#">12000 BTU</button>
+            <button type="button" onclic="#">18000 BTU</button>
+            <button type="button" onclic="#">24000 BTU</button>
+            <button type="button" onclic="#">36000 BTU</button>
         </div>
          </form>    
     </body>
