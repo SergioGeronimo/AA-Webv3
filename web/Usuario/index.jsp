@@ -19,10 +19,17 @@
         Bienvenido prro, Usuarios loggeados: <%=UserControl.usuariosOnline()%>
         <form action="../logout" method="post">
             <input type="submit" value="Salir">
+        </form><br><br><br>
+        
+        <form action="../upload" method="post" enctype="multipart/form-data">
+            Selecciona un archivo:<br>
+            <input typ="file" name="archivo">
+            <br>
+            <input type="submit" value="Enviar">
         </form>
         <%
     } else {
-       response.sendRedirect("/AAWeb");
+       response.sendRedirect(request.getContextPath());
     }
 %>
     </body>

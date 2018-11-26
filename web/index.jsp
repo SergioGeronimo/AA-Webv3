@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Indexe</title>
         <link rel="stylesheet" href="CSS/prueba.css">
     </head>
     <body>
@@ -20,14 +20,8 @@
     } else {
     %>
     <div>
-        Formulario de Ingreso <br><br><br>
-        <form action="./login" method="POST">
-            Usuario: 
-            <input type="text" name="email" required><br>
-            Contraseña:
-            <input type="password" name="pwd" required><br>
-            <input type="submit" value="Ingresar">
-        </form>
+        <a href="./Login/login.jsp">Login</a>
+        <a href="./Login/register.jsp">Registro</a>
     </div>
     <%
     }

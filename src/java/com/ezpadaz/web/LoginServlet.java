@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
         session = request.getSession();
         
         loginMethod();
-        response.sendRedirect("/AAWeb");
+        response.sendRedirect(request.getContextPath());
     }
 
     private void loginMethod(){  
