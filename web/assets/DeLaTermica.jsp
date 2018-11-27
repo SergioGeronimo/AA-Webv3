@@ -36,6 +36,8 @@
                             </td>
                         </span>
             </tr>
+           
+                       <%--          Area del piso               --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">Area</span>
@@ -51,6 +53,8 @@
                     <input type="float" name="Area_Fondo" value="" required>
                 </td>
             </tr>
+            
+                       <%--          Volumen del recinto         --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">Volumen Del Recinto</span>
@@ -65,6 +69,8 @@
                     <input type="float" name="Volumen_Fondo" value="" required>
                 </td>
             </tr>
+          
+            <%--          Metodo para buscar la ventana mas optima         --%>
             <%!
             	public static float comparar(float ventana_Sur_o_Este, float Suroeste, float Oeste, float Noreste_O_Sureste) {
 		float min = ventana_Sur_o_Este;
@@ -88,9 +94,12 @@
 		return max;
 	}
             %>
+ 
             
-            <tr align="center">
+            <%--          Esqueleto Ventana         --%>
+                    <tr align="center">
                     <th colspan="4">Ventanas</th>
+<%--          Ventana lado sur o este                --%>                                   
                     <tr>
                         <td>
                                 <span style="font-weight: bold;">Ventana Sur Este</span>
@@ -102,6 +111,7 @@
                             <input type="float" name="V1_Alto" value="" required>
                         </td>                    
                     </tr>    
+<%--          Ventana lado suroeste                  --%>
                     <tr>
                         <td>
                                 <span style="font-weight: bold;">Ventana Suroeste</span>
@@ -113,6 +123,7 @@
                             <input type="float" name="V2_Alto" value="" required>
                         </td>
                     </tr>
+<%--          Ventana lado oeste                     --%>
                     <tr>
                         <td>
                                 <span style="font-weight: bold;">Ventana Oeste</span>
@@ -124,6 +135,7 @@
                             <input type="float" name="V3_Alto" value="" required>
                         </td>
                     </tr>
+<%--          Ventana lado Noreste o sureste         --%>                    
                     <tr>
                         <td>
                                 <span style="font-weight: bold;">Ventana Noreste o Sureste</span>
@@ -136,6 +148,8 @@
                         </td>
                     </tr>
             </tr>
+            
+            <%--          Resto Ventanas         --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">Area Del Resto De Las Ventanas</span>
@@ -156,6 +170,8 @@
                     <input type="float" name="Area_De_Pared_3" value="" required>
                 </td>
             </tr>
+            
+            <%--          Paredes Exteriores         --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">Area Del Resto De Las Paredes Exteriores <br>(No Incluir La Dimension De La Ventana</span>
@@ -164,6 +180,8 @@
                     <input type="float" name="Area_Paredes_exteriores" value="" required>
                 </td>
             </tr>
+           
+            <%--          Paredes Adyacentes         --%>
             <tr>
                 <td>
                     <span style="font-weight: bold;">Area De Todas Las Paredes Adyacentes<br> A Un Recinto No Acondicionado</span>
@@ -172,9 +190,13 @@
                     <input type="float" name="Area_Paredes_Adyacentes" value="" required>
                 </td>
             </tr>
+           
+            <%--          Techos         --%>
             <tr algin="center">
                 <th colspan="4">Techos</th>
-                        <tr> <td>
+<%--          Techo con construccion arriba sin acondicionar         --%>
+                        <tr> 
+                            <td>
                                <span style="font-weight: bold;">Techo Con Construccion Arriba Sin Acondicionar</span>
                             </td>
                             <td>
@@ -184,7 +206,8 @@
                                 <input type="float" name="Techo_Arriba_Fondo" value="" required>
                             </td>
                         </tr>
-                        <tr>
+<%--                    Techo con plafon no aislado                  --%>
+                            <tr>
                             <td>
                                <span style="font-weight: bold;">Techo Con Plafon NO Aislado</span>
                             </td>
@@ -195,7 +218,8 @@
                                 <input type="float" name="Techo_plafon_Fondo" value="" required>
                             </td>
                         </tr>
-                        <tr>
+<%--          Techo con plafon y 50 mm.(2")omas de aislamiento         --%>
+                            <tr>
                             <td>
                                <span style="font-weight: bold;">Techado Con Plafon Y 50 mm. (2") O Más De Aislamiento</span>
                             </td>
@@ -206,7 +230,8 @@
                                 <input type="float" name="Techo_Aislado_Fondo" value="" required>
                             </td>
                         </tr>
-                        <tr>
+<%--                              Techo no aislado                       --%>
+                            <tr>
                             <td>
                                <span style="font-weight: bold;">Techado No Aislado</span>
                             </td>
@@ -219,6 +244,8 @@
                         </tr>
             </tr>
                 <tr> <th colspan="4"></th> </tr>            
+            
+               <%--          Num de personas dentro del recinto         --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">NUM. De Personas Dentro Del Recinto</span>
@@ -228,6 +255,8 @@
                 </td>
 
             </tr>
+            
+           <%--          Luz y equipos electricos en uso (watts)         --%>
             <tr>
                 <td>
                         <span style="font-weight: bold;">Luz Y Equipos Electricos En Uso (WATTS)</span>
@@ -238,26 +267,5 @@
             </tr>
         </tbody>
         </table>
-        
-        <%/*
-        <div>
-            <form method="post" action = "DeLa<Termica.jsp">
-                <table>
-                <tr>
-                    
-                </tr> 
-                
-                <tr>
-                    <td> Nombre del area</td>
-                    <td> Alto</td>
-                    <td> Ancho</td>
-                    
-                </tr>
-                </table>
-            </form>
-           
-        </div>
-        */%>
-        
     </body>
 </html>
