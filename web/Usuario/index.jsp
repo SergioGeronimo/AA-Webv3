@@ -10,23 +10,24 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Pagina Secreta</title>
+        <title>Pagina Principal</title>
+        <link rel="stylesheet" href="./CSS/style.css">
     </head>
     <body>
         <%
     if(UserControl.isLogged(session.getId())){
         %>
-        Bienvenido prro, Usuarios loggeados: <%=UserControl.usuariosOnline()%>
-        <form action="../logout" method="post">
-            <input type="submit" value="Salir">
-        </form><br><br><br>
+        <!--HTML AQUI-->
+        <div class="menu">
+            <a href="#" target="frame">Calcular Carga Termica</a>
+            <a href="#" target="frame">Calcular Consumo Electrico</a>
+            <a href="#" target="frame">nothing yet.</a>
+            <a href="#" target="frame">nope</a>
+        </div>
         
-        <form action="../upload" method="post" enctype="multipart/form-data">
-            Selecciona un archivo:<br>
-            <input typ="file" name="archivo">
-            <br>
-            <input type="submit" value="Enviar">
-        </form>
+        <div class="contenido">
+            <iframe id="fram" name="frame" src="" frameborder="0" scrolling="no"></iframe>
+        </div>
         <%
     } else {
        response.sendRedirect(request.getContextPath());

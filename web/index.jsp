@@ -10,8 +10,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Indexe</title>
-        <link rel="stylesheet" href="CSS/prueba.css">
+        <title>Index</title>
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
 <%
@@ -19,9 +19,26 @@
         response.sendRedirect("./Usuario/index.jsp");
     } else {
     %>
-    <div>
-        <a href="./Login/login.jsp">Login</a>
-        <a href="./Login/register.jsp">Registro</a>
+    <div><br><br><br><br>
+        <center>
+            <table>
+                <tr>                  
+                        <font size="40">
+                        Aplicación Web
+                </tr>
+                <br><br>
+                <tr>
+                    <td>
+                        <font size="5">
+                        <a href="./Login/login.jsp">Iniciar Sesión</a>
+                    </td>
+                    <td>
+                        <font size="5">
+                        <a href="./Login/register.jsp">Registrate</a>
+                    </td>
+                </tr>
+            </table>
+        </center>
     </div>
     <%
     }
