@@ -3,7 +3,11 @@
     Created on : 26/11/2018, 07:26:51 PM
     Author     : De La Cruz Ek
 --%>
-
+<%@page import="com.moran.db.BTU" %>
+<%@ page import= "java.sql.Connection" %>
+<%@ page import ="java.sql.ResultSet" %>
+<%@ page import ="java.sql.SQLException" %>
+<%@ page import ="java.sql.Statement" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +16,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+            <%--          Tabla               --%>
         <table style="text-align: left; width: 100%; margin-left: auto; margin-right: auto;"border="3" cellpadding="2" cellspacing="2">
             <caption>
                    <span style="font-weight: bold;">Calculadora de Carga Termica
@@ -20,7 +24,12 @@
                     <br>
             </caption>  
          <tbody>
-            <tr align="center">
+             
+             
+             <%int Temperatura=0;%> <%/* variable para las temperaturas promedio anuales */%>
+          
+            <%--          Temperaturas entrantes(Temperatura exterior promedio               --%>            
+             <tr align="center">
                         <span style="font-weight: bold;">
                             <td> Temperatura Exterior Promedio
                             </td> 
@@ -36,6 +45,55 @@
                             </td>
                         </span>
             </tr>
+            <%
+             String Factor_Multi1=("SELECT area_piso FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi1E = Integer.parseInt(Factor_Multi1);
+             
+             String Factor_Multi2=("SELECT Volumen FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi2E = Integer.parseInt(Factor_Multi2);
+             
+             String Factor_Multi3=("SELECT vent_Sur_est FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi3E = Integer.parseInt(Factor_Multi3);
+             
+             String Factor_Multi4=("SELECT Vent_sroest FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi4E = Integer.parseInt(Factor_Multi4);
+             
+             String Factor_Multi5=("SELECT Vent_oest FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi5E = Integer.parseInt(Factor_Multi5);
+             
+             String Factor_Multi6=("SELECT vent_Nor_Sur FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi6E = Integer.parseInt(Factor_Multi6);
+             
+             String Factor_Multi7=("SELECT resto_Vent FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi7E = Integer.parseInt(Factor_Multi7);
+             
+             String Factor_Multi8=("SELECT dimension_PA_VEN FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi8E = Integer.parseInt(Factor_Multi8);
+             
+             String Factor_Multi9=("SELECT Pared_ext FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi9E = Integer.parseInt(Factor_Multi9);
+             
+             String Factor_Multi10=("SELECT Pared_ADYN FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi10E = Integer.parseInt(Factor_Multi10);
+             
+             String Factor_Multi11=("SELECT Techo_CNTR_SIN_ACD FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi11E = Integer.parseInt(Factor_Multi11);
+             
+             String Factor_Multi12=("SELECT Techo_PLF_NOA FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi12E = Integer.parseInt(Factor_Multi12);
+             
+             String Factor_Multi13=("SELECT TechoAISLado FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi13E = Integer.parseInt(Factor_Multi13);
+             
+             String Factor_Multi14=("SELECT Techo_NO_AISLD FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi14E = Integer.parseInt(Factor_Multi14);
+             
+             String Factor_Multi15=("SELECT personas FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi15E = Integer.parseInt(Factor_Multi15);
+             
+             String Factor_Multi16=("SELECT LUZ_YELECTR FROM multiplicador WHERE promedio_temp = '"+Temperatura+"' ");
+             int Factor_Multi16E = Integer.parseInt(Factor_Multi16);
+            %>
            
                        <%--          Area del piso               --%>
             <tr>
@@ -47,7 +105,6 @@
                 %>
                 <td>
                     <input type="float" name="<%= Area_Ancho%>" value="" required>
-                    
                 </td>
                 <td>
                     <input type="float" name="Area_Fondo" value="" required>
