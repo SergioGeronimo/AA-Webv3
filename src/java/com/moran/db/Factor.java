@@ -1,34 +1,22 @@
-package com.moran.db;
+package datos;
 
+    
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Factor {
-    private static Statement smt;
-    private static ResultSet rs;
-    
-    public static void main(String[] args) {
-        Connection con = PoolDB.getPool().getCon();
-        System.out.println(getArea_piso(con));
-        System.out.println(getVolumen(con));
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
-    }
+    private Statement smt;
+    private ResultSet rs;
+   
     
     //punto 1 Area del piso.
-    public static int getArea_piso(Connection con){
+    public int getArea_piso(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT area_piso FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT area_piso FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -39,11 +27,11 @@ public class Factor {
     }
     
     //punto 2. Volumen del recinto
-    public static int getVolumen(Connection con){
+    public int getVolumen(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Volumen FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Volumen FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -56,11 +44,11 @@ public class Factor {
     
     //punto 3.
     //ventana lado sur o este
-    public static int getVen_Sur_est(Connection con){
+    public int getVen_Sur_est(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT vent_Sur_est FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT vent_Sur_est FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -70,11 +58,11 @@ public class Factor {
          return aux;
     }
     //ventana lado suroeste
-    public static int getVent_sroest(Connection con){
+    public int getVent_sroest(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT vent_sroest FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT vent_sroest FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -84,11 +72,11 @@ public class Factor {
          return aux;
     }
     //ventana  lado oeste
-    public static int getVent_oest(Connection con){
+    public int getVent_oest(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Vent_oest FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Vent_oest FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -98,11 +86,11 @@ public class Factor {
          return aux;
     }
     //Ventada lado noroeste o suroeste
-    public static int getVent_Nor_Sur(Connection con){
+    public int getVent_Nor_Sur(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT vent_Nor_Sur FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT vent_Nor_Sur FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -113,11 +101,11 @@ public class Factor {
     }
     
     //punto 4. resto de las vventanas
-    public static int getResto_Vent(Connection con){
+    public int getResto_Vent(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT resto_Vent FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT resto_Vent FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -128,11 +116,11 @@ public class Factor {
     }
     
     //punt 5. area de la pared utilizada en el punto 3
-    public static int getDimension_PA_VEN(Connection con){
+    public int getDimension_PA_VEN(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT dimension_PA_VEN FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT dimension_PA_VEN FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -143,11 +131,11 @@ public class Factor {
     }
     
     //resto de las paredes exteriores 
-    public static int getPared_ext(Connection con){
+    public int getPared_ext(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Pared_ext FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Pared_ext FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -158,11 +146,11 @@ public class Factor {
     }
     
     //punto 7. area de todas las peredes adyacentes
-    public static int getPared_ADYN(Connection con){
+    public int getPared_ADYN(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Pared_ADYN FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Pared_ADYN FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -174,11 +162,11 @@ public class Factor {
     
     //punto 8.
     //techo sin acondicionar
-    public static int getTecho_CNTR_SIN_ACD(Connection con){
+    public int getTecho_CNTR_SIN_ACD(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Techo_CNTR_SIN_ACD FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Techo_CNTR_SIN_ACD FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -188,11 +176,11 @@ public class Factor {
          return aux;
     }
     //techo con plafon no aislado
-    public static int getTecho_PLF_NOA(Connection con){
+    public int getTecho_PLF_NOA(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Techo_PLF_NOA FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Techo_PLF_NOA FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -202,11 +190,11 @@ public class Factor {
          return aux;
     }
     //techado con plafon aislado
-    public static int getTecho_AISLado(Connection con){
+    public int getTecho_AISLado(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Techo_AISLado FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Techo_AISLado FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -216,11 +204,11 @@ public class Factor {
          return aux;
     }
     //techado no aislado
-    public static int getTecho_No_AISLD(Connection con){
+    public int getTecho_No_AISLD(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT Techo_No_AISLD FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT Techo_No_AISLD FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -231,11 +219,11 @@ public class Factor {
     }
     
     //punto 9. numero de personas 
-    public static int getPersonas(Connection con){
+    public int getPersonas(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT personas FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT personas FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));
@@ -246,11 +234,11 @@ public class Factor {
     }
     
     //punt 10. luz y equipos electricos
-    public static int getLUZ_YELECTR(Connection con){
+    public int getLUZ_YELECTR(Connection con, int temAnual){
         int aux = 0;
          try {
             smt = con.createStatement();
-            String sql = "SELECT LUZ_YELECTR FROM multiplicador WHERE promedio_temp = '"+Termica.getTemPromAnual()+"'";
+            String sql = "SELECT LUZ_YELECTR FROM multiplicador WHERE promedio_temp = '"+temAnual+"'";
             rs = smt.executeQuery(sql);
             while(rs.next())
                 aux = Integer.parseInt(rs.getString(1));

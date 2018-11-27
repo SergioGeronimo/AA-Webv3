@@ -1,297 +1,297 @@
-package com.moran.db;
+package datos;
 
 public class Termica {
     //tempearatura exterior promedio anual
-    private static int temPromAnual; 
+    private int temPromAnual; 
     
     //punto 1 area del piso
-    private static float areaPiso_ancho;
-    private static float areaPiso_fondo;
+    private float areaPiso_ancho;
+    private float areaPiso_fondo;
     
     //punto 2 volumen del recinto
-    private static float volRecinto_alto;
-    private static float volRecinto_ancho;
-    private static float volRecinto_fondo;
+    private float volRecinto_alto;
+    private float volRecinto_ancho;
+    private float volRecinto_fondo;
     
     // punto 3.
     //ventana lado sur o este
-    private static float venLadoSoE_alto;
-    private static float venLadoSoE_ancho;
+    private float venLadoSoE_alto;
+    private float venLadoSoE_ancho;
     //ventana lado suroeste
-    private static float venLadoSuroEste_alto;
-    private static float venLadoSuroEste_ancho;
+    private float venLadoSuroEste_alto;
+    private float venLadoSuroEste_ancho;
     //ventana lado oeste
-    private static float venLadoOeste_alto;
-    private static float venLadoOeste_ancho;
+    private float venLadoOeste_alto;
+    private float venLadoOeste_ancho;
     //ventana lado noroeste o suroeste
-    private static float venLadoNoEoSurE_alto;
-    private static float venLadoNoEoSurE_ancho;
+    private float venLadoNoEoSurE_alto;
+    private float venLadoNoEoSurE_ancho;
     
     //punto 4 area del resto de las ventanas
-    private static float areaRestoVen_alto;
-    private static float areaRestoVen_ancho;
+    private float areaRestoVen_alto;
+    private float areaRestoVen_ancho;
     
     //punto 5. Area de la pared utilizada en el punto 3
-    private static float areaPared;
+    private float areaPared;
     
     //punto 6. area del resto de las paredes exterior
-    private static float restoPared;
+    private float restoPared;
     
     //punto 7. area de todas las paredes adyacentes a un recinto no acondicionado
-    private static float areaAdyacente;
+    private float areaAdyacente;
     
     //punto 8.
     //techo con construccion arriba sin acondicionar
-    private static float techoArriba_ancho;
-    private static float techoArriba_fondo;
+    private float techoArriba_ancho;
+    private float techoArriba_fondo;
     //techo con plafon no aislado
-    private static float techoNoAislado_ancho;
-    private static float techoNoAislado_fondo;
+    private float techoNoAislado_ancho;
+    private float techoNoAislado_fondo;
     //techado con plafon y 50mm o mas de aislamiento
-    private static float techadoPlafon_ancho;
-    private static float techadoPlafon_fondo;
+    private float techadoPlafon_ancho;
+    private float techadoPlafon_fondo;
     //Techado no aislado
-    private static float techadoNoAislado_ancho;
-    private static float techadoNoAislado_fondo;
+    private float techadoNoAislado_ancho;
+    private float techadoNoAislado_fondo;
     
     //punto 9. numero de personas dentro del recinto
-    private static float numPerson;
+    private float numPerson;
     
     //punto 10. luz y equipos electricos en uso(watts)
-    private static float luzEquipos;
+    private float luzEquipos;
     
     //metodos getter and setter
 
-    public static int getTemPromAnual() {
+    public int getTemPromAnual() {
         return temPromAnual;
     }
 
-    public static void setTemPromAnual(int temPromAnual) {
-        Termica.temPromAnual = temPromAnual;
+    public void setTemPromAnual(int temPromAnual) {
+        this.temPromAnual = temPromAnual;
     }
 
-    public static float getAreaPiso_ancho() {
+    public float getAreaPiso_ancho() {
         return areaPiso_ancho;
     }
 
-    public static void setAreaPiso_ancho(float areaPiso_ancho) {
-        Termica.areaPiso_ancho = areaPiso_ancho;
+    public void setAreaPiso_ancho(float areaPiso_ancho) {
+        this.areaPiso_ancho = areaPiso_ancho;
     }
 
-    public static float getAreaPiso_fondo() {
+    public float getAreaPiso_fondo() {
         return areaPiso_fondo;
     }
 
-    public static void setAreaPiso_fondo(float areaPiso_fondo) {
-        Termica.areaPiso_fondo = areaPiso_fondo;
+    public void setAreaPiso_fondo(float areaPiso_fondo) {
+        this.areaPiso_fondo = areaPiso_fondo;
     }
 
-    public static float getVolRecinto_alto() {
+    public float getVolRecinto_alto() {
         return volRecinto_alto;
     }
 
-    public static void setVolRecinto_alto(float volRecinto_alto) {
-        Termica.volRecinto_alto = volRecinto_alto;
+    public void setVolRecinto_alto(float volRecinto_alto) {
+        this.volRecinto_alto = volRecinto_alto;
     }
 
-    public static float getVolRecinto_ancho() {
+    public float getVolRecinto_ancho() {
         return volRecinto_ancho;
     }
 
-    public static void setVolRecinto_ancho(float volRecinto_ancho) {
-        Termica.volRecinto_ancho = volRecinto_ancho;
+    public void setVolRecinto_ancho(float volRecinto_ancho) {
+        this.volRecinto_ancho = volRecinto_ancho;
     }
 
-    public static float getVolRecinto_fondo() {
+    public float getVolRecinto_fondo() {
         return volRecinto_fondo;
     }
 
-    public static void setVolRecinto_fondo(float volRecinto_fondo) {
-        Termica.volRecinto_fondo = volRecinto_fondo;
+    public void setVolRecinto_fondo(float volRecinto_fondo) {
+        this.volRecinto_fondo = volRecinto_fondo;
     }
 
-    public static float getVenLadoSoE_alto() {
+    public float getVenLadoSoE_alto() {
         return venLadoSoE_alto;
     }
 
-    public static void setVenLadoSoE_alto(float venLadoSoE_alto) {
-        Termica.venLadoSoE_alto = venLadoSoE_alto;
+    public void setVenLadoSoE_alto(float venLadoSoE_alto) {
+        this.venLadoSoE_alto = venLadoSoE_alto;
     }
 
-    public static float getVenLadoSoE_ancho() {
+    public float getVenLadoSoE_ancho() {
         return venLadoSoE_ancho;
     }
 
-    public static void setVenLadoSoE_ancho(float venLadoSoE_ancho) {
-        Termica.venLadoSoE_ancho = venLadoSoE_ancho;
+    public void setVenLadoSoE_ancho(float venLadoSoE_ancho) {
+        this.venLadoSoE_ancho = venLadoSoE_ancho;
     }
 
-    public static float getVenLadoSuroEste_alto() {
+    public float getVenLadoSuroEste_alto() {
         return venLadoSuroEste_alto;
     }
 
-    public static void setVenLadoSuroEste_alto(float venLadoSuroEste_alto) {
-        Termica.venLadoSuroEste_alto = venLadoSuroEste_alto;
+    public void setVenLadoSuroEste_alto(float venLadoSuroEste_alto) {
+        this.venLadoSuroEste_alto = venLadoSuroEste_alto;
     }
 
-    public static float getVenLadoSuroEste_ancho() {
+    public float getVenLadoSuroEste_ancho() {
         return venLadoSuroEste_ancho;
     }
 
-    public static void setVenLadoSuroEste_ancho(float venLadoSuroEste_ancho) {
-        Termica.venLadoSuroEste_ancho = venLadoSuroEste_ancho;
+    public void setVenLadoSuroEste_ancho(float venLadoSuroEste_ancho) {
+        this.venLadoSuroEste_ancho = venLadoSuroEste_ancho;
     }
 
-    public static float getVenLadoOeste_alto() {
+    public float getVenLadoOeste_alto() {
         return venLadoOeste_alto;
     }
 
-    public static void setVenLadoOeste_alto(float venLadoOeste_alto) {
-        Termica.venLadoOeste_alto = venLadoOeste_alto;
+    public void setVenLadoOeste_alto(float venLadoOeste_alto) {
+        this.venLadoOeste_alto = venLadoOeste_alto;
     }
 
-    public static float getVenLadoOeste_ancho() {
+    public float getVenLadoOeste_ancho() {
         return venLadoOeste_ancho;
     }
 
-    public static void setVenLadoOeste_ancho(float venLadoOeste_ancho) {
-        Termica.venLadoOeste_ancho = venLadoOeste_ancho;
+    public void setVenLadoOeste_ancho(float venLadoOeste_ancho) {
+        this.venLadoOeste_ancho = venLadoOeste_ancho;
     }
 
-    public static float getVenLadoNoEoSurE_alto() {
+    public float getVenLadoNoEoSurE_alto() {
         return venLadoNoEoSurE_alto;
     }
 
-    public static void setVenLadoNoEoSurE_alto(float venLadoNoEoSurE_alto) {
-        Termica.venLadoNoEoSurE_alto = venLadoNoEoSurE_alto;
+    public void setVenLadoNoEoSurE_alto(float venLadoNoEoSurE_alto) {
+        this.venLadoNoEoSurE_alto = venLadoNoEoSurE_alto;
     }
 
-    public static float getVenLadoNoEoSurE_ancho() {
+    public float getVenLadoNoEoSurE_ancho() {
         return venLadoNoEoSurE_ancho;
     }
 
-    public static void setVenLadoNoEoSurE_ancho(float venLadoNoEoSurE_ancho) {
-        Termica.venLadoNoEoSurE_ancho = venLadoNoEoSurE_ancho;
+    public void setVenLadoNoEoSurE_ancho(float venLadoNoEoSurE_ancho) {
+        this.venLadoNoEoSurE_ancho = venLadoNoEoSurE_ancho;
     }
 
-    public static float getAreaRestoVen_alto() {
+    public float getAreaRestoVen_alto() {
         return areaRestoVen_alto;
     }
 
-    public static void setAreaRestoVen_alto(float areaRestoVen_alto) {
-        Termica.areaRestoVen_alto = areaRestoVen_alto;
+    public void setAreaRestoVen_alto(float areaRestoVen_alto) {
+        this.areaRestoVen_alto = areaRestoVen_alto;
     }
 
-    public static float getAreaRestoVen_ancho() {
+    public float getAreaRestoVen_ancho() {
         return areaRestoVen_ancho;
     }
 
-    public static void setAreaRestoVen_ancho(float areaRestoVen_ancho) {
-        Termica.areaRestoVen_ancho = areaRestoVen_ancho;
+    public void setAreaRestoVen_ancho(float areaRestoVen_ancho) {
+        this.areaRestoVen_ancho = areaRestoVen_ancho;
     }
 
-    public static float getAreaPared() {
+    public float getAreaPared() {
         return areaPared;
     }
 
-    public static void setAreaPared(float areaPared) {
-        Termica.areaPared = areaPared;
+    public void setAreaPared(float areaPared) {
+        this.areaPared = areaPared;
     }
 
-    public static float getRestoPared() {
+    public float getRestoPared() {
         return restoPared;
     }
 
-    public static void setRestoPared(float restoPared) {
-        Termica.restoPared = restoPared;
+    public void setRestoPared(float restoPared) {
+        this.restoPared = restoPared;
     }
 
-    public static float getAreaAdyacente() {
+    public float getAreaAdyacente() {
         return areaAdyacente;
     }
 
-    public static void setAreaAdyacente(float areaAdyacente) {
-        Termica.areaAdyacente = areaAdyacente;
+    public void setAreaAdyacente(float areaAdyacente) {
+        this.areaAdyacente = areaAdyacente;
     }
 
-    public static float getTechoArriba_ancho() {
+    public float getTechoArriba_ancho() {
         return techoArriba_ancho;
     }
 
-    public static void setTechoArriba_ancho(float techoArriba_ancho) {
-        Termica.techoArriba_ancho = techoArriba_ancho;
+    public void setTechoArriba_ancho(float techoArriba_ancho) {
+        this.techoArriba_ancho = techoArriba_ancho;
     }
 
-    public static float getTechoArriba_fondo() {
+    public float getTechoArriba_fondo() {
         return techoArriba_fondo;
     }
 
-    public static void setTechoArriba_fondo(float techoArriba_fondo) {
-        Termica.techoArriba_fondo = techoArriba_fondo;
+    public void setTechoArriba_fondo(float techoArriba_fondo) {
+        this.techoArriba_fondo = techoArriba_fondo;
     }
 
-    public static float getTechoNoAislado_ancho() {
+    public float getTechoNoAislado_ancho() {
         return techoNoAislado_ancho;
     }
 
-    public static void setTechoNoAislado_ancho(float techoNoAislado_ancho) {
-        Termica.techoNoAislado_ancho = techoNoAislado_ancho;
+    public void setTechoNoAislado_ancho(float techoNoAislado_ancho) {
+        this.techoNoAislado_ancho = techoNoAislado_ancho;
     }
 
-    public static float getTechoNoAislado_fondo() {
+    public float getTechoNoAislado_fondo() {
         return techoNoAislado_fondo;
     }
 
-    public static void setTechoNoAislado_fondo(float techoNoAislado_fondo) {
-        Termica.techoNoAislado_fondo = techoNoAislado_fondo;
+    public void setTechoNoAislado_fondo(float techoNoAislado_fondo) {
+        this.techoNoAislado_fondo = techoNoAislado_fondo;
     }
 
-    public static float getTechadoPlafon_ancho() {
+    public float getTechadoPlafon_ancho() {
         return techadoPlafon_ancho;
     }
 
-    public static void setTechadoPlafon_ancho(float techadoPlafon_ancho) {
-        Termica.techadoPlafon_ancho = techadoPlafon_ancho;
+    public void setTechadoPlafon_ancho(float techadoPlafon_ancho) {
+        this.techadoPlafon_ancho = techadoPlafon_ancho;
     }
 
-    public static float getTechadoPlafon_fondo() {
+    public float getTechadoPlafon_fondo() {
         return techadoPlafon_fondo;
     }
 
-    public static void setTechadoPlafon_fondo(float techadoPlafon_fondo) {
-        Termica.techadoPlafon_fondo = techadoPlafon_fondo;
+    public void setTechadoPlafon_fondo(float techadoPlafon_fondo) {
+        this.techadoPlafon_fondo = techadoPlafon_fondo;
     }
 
-    public static float getTechadoNoAislado_ancho() {
+    public float getTechadoNoAislado_ancho() {
         return techadoNoAislado_ancho;
     }
 
-    public static void setTechadoNoAislado_ancho(float techadoNoAislado_ancho) {
-        Termica.techadoNoAislado_ancho = techadoNoAislado_ancho;
+    public void setTechadoNoAislado_ancho(float techadoNoAislado_ancho) {
+        this.techadoNoAislado_ancho = techadoNoAislado_ancho;
     }
 
-    public static float getTechadoNoAislado_fondo() {
+    public float getTechadoNoAislado_fondo() {
         return techadoNoAislado_fondo;
     }
 
-    public static void setTechadoNoAislado_fondo(float techadoNoAislado_fondo) {
-        Termica.techadoNoAislado_fondo = techadoNoAislado_fondo;
+    public void setTechadoNoAislado_fondo(float techadoNoAislado_fondo) {
+        this.techadoNoAislado_fondo = techadoNoAislado_fondo;
     }
 
-    public static float getNumPerson() {
+    public float getNumPerson() {
         return numPerson;
     }
 
-    public static void setNumPerson(float numPerson) {
-        Termica.numPerson = numPerson;
+    public void setNumPerson(float numPerson) {
+        this.numPerson = numPerson;
     }
 
-    public static float getLuzEquipos() {
+    public float getLuzEquipos() {
         return luzEquipos;
     }
 
-    public static void setLuzEquipos(float luzEquipos) {
-        Termica.luzEquipos = luzEquipos;
+    public void setLuzEquipos(float luzEquipos) {
+        this.luzEquipos = luzEquipos;
     }
     
     

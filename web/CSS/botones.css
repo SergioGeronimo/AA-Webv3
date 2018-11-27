@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-nov-2018, 2:38:13
+    Author     : Sergio_Gerónimo_González
+*/
+
+button{
+    background: white;
+    border: 1px solid #2e477b;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+button:hover{
+    color: white;
+    background: #d23653;
+    border: 1px solid #d23653;
+    border-radius: 3px;
+    
+    
+}
+button.navButton{
+    
+    background: white;
+    border: 1px solid #2e477b;
+    border-radius: 3px;
+    margin: 20px;
+    height: 40px;
+    padding: 10px;
+    margin-top: auto;
+    color: #2e477b;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+button.navButton:hover{
+    border-color: #d23653;
+    background-color: #d23653;
+    color: white;
+}
+
+h1 .material-icons{
+    
+    align-self: flex-end;
+}

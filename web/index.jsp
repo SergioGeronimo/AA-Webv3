@@ -11,7 +11,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Index</title>
-        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/index.css">
+        
     </head>
     <body>
 <%
@@ -35,6 +36,7 @@
                     <td>
                         <font size="5">
                         <a href="./Login/register.jsp">Registrate</a>
+                        
                     </td>
                 </tr>
             </table>

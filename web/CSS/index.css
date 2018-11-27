@@ -8,38 +8,14 @@ and open the template in the editor.
     Author     : ezpadaz
 */
 
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900');
 
 *{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-body {    
-    background-color: lightgray;
+table, th, td{
+    border: solid black 1px;
 }
 
-p#FormMsj{
-    color: red;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.menu{
-    position: absolute;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 10em;
-    border-right: 1px solid;
-}
-
-
-.contenido{   
-    padding-left: 15em;    
-}
-iframe#fram{   
-    position: relative;
-    height: 100%;
-    width: 100%; 
-    
-}
