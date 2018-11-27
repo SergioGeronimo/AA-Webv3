@@ -3,7 +3,7 @@
     Created on : 26/11/2018, 06:42:02 AM
     Author     : pc
 --%>
-<%@page import="com.moran.db.ConsElect"%>
+<%@page import="com.moran.db.ConsElect_1"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,7 @@
     <body>
         <p id="lol"></p>
         <%! 
-            private ConsElect ce = new ConsElect();
+           private ConsElect_1 ce = new ConsElect_1();
         public boolean isNum(String num){
             boolean isN = false;
             try{

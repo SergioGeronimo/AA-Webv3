@@ -1,4 +1,4 @@
-package datos;
+package com.moran.db;
 
 public class Termica {
     //tempearatura exterior promedio anual

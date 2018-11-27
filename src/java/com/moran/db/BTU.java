@@ -1,4 +1,4 @@
-package datos;
+package com.moran.db;
 
 
 import java.sql.Connection;
