@@ -34,13 +34,13 @@
                             <td> Temperatura Exterior Promedio
                             </td> 
                             <td>
-                                <select name="select" form="lista de Temperaturas" onchange="this.form.submit()">
+                                <select name="<%= Temperatura%>" form="lista de Temperaturas" onchange="this.form.submit()">
                                     <option value=""    > </option>
-                                    <option value="0"   >32°</option>
-                                    <option value="1"   >35°</option>
-                                    <option value="2"   >38°</option>
-                                    <option value="3"   >41°</option>
-                                    <option value="4"   >43°</option>
+                                    <option value="32"   >32°</option>
+                                    <option value="35"   >35°</option>
+                                    <option value="38"   >38°</option>
+                                    <option value="41"   >41°</option>
+                                    <option value="43"   >43°</option>
                                 </select> 
                             </td>
                         </span>
