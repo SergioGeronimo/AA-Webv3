@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="CSS/cargaTerm.css">
+        <link rel="stylesheet" href="CSS/general.css">
         <link rel="stylesheet" href="CSS/botones.css">
         <link rel="stylesheet" href="CSS/div.css">
         <title>Cálculo de carga térmica</title>

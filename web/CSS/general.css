@@ -4,7 +4,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 25-nov-2018, 17:52:30
+    Created on : 26-nov-2018, 13:35:57
     Author     : Sergio_Gerónimo_González
 */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900');
@@ -112,4 +112,8 @@ input, select{
     margin: 0px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+textArea{
+    resize: none;
 }

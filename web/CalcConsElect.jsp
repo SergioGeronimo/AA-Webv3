@@ -1,165 +1,91 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Calculo de consumo eléctrico</title>
         
         <meta pageEncoding="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="CSS/prueba.css">
+        <link rel ="stylesheet" href="CSS/general.css">
+        <link rel ="stylesheet" href="CSS/div.css">
+        <link rel ="stylesheet" href="CSS/botones.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         
-        <div>
-            <form method="post">
-                <table>
-                    <tr>
-                        <td> DATOS DE FACTURACIÓN ELÉCTRICA </td>
-                    </tr>
-                    
-                    <tr>
-                        <td> Precio promedio tarifa ($/KWh): </td>
-                        <td> <input type="text" name="precioTarifa"> </td>
-                        <td> Tarifa </td>
-                        <td>
-                            <select>
-                                <option value="Om"> OM </option>
-                                <option value="HM"> HM </option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div class="header">
+                <h1 class="title"><a class="toIndex" href="index.jsp"> AERE</a></h1>
         </div>
         
-        <div>        
-        <form method="post">
-            <table>
-                <th> DATOS DE PLACA - INGRESE LOS VALORES EN LAS CELDAS EN COLOR AMARILLO </th>
-                
-                <TR>
-                    <TD> TIPO DE EQUIPO: </TD>
-                    <TD> Minisplit </TD>
-                </TR>
-                
-                <TR>
-                    <TD colspan="2"> UNIDAD CONDENSADORA </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Marca: </TD>
-                    <TD colspan="2"> Prime </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Modelo </TD>
-                    <TD colspan="2"></TD>
-                </TR>
-                
-                <TR>
-                    <TD>Capacidad de enfiramiento: </TD>
-                    <TD> <input type="text" name="capacidadEn"> </TD>
-                    <TD> [Btu/h] </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Potencia activa: </TD>
-                    <TD> <input type="text" name="potenciaA"> </TD>
-                    <TD> [W] </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Pot. activa po tension y corriente: </TD>
-                    <TD> 2138.4 </TD>
-                    <TD> [W] </TD>
-                </TR>             
-                
-                <TR>
-                    <TD> Tensión: </TD>
-                    <TD> <input type="text" name="tension"> </TD>
-                    <TD> V </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Corriente nominal: </TD>
-                    <TD> <input type="text" name="corrienteNominal"> </TD>
-                    <TD> A </TD>
-                </TR>
-                
-                <TR>
-                    <TD> Refrigerante: </TD>
-                    <TD colspan="2"> R-22 </TD>
-                </TR>
-                
-                <TR>
-                    <TD> EER por datos de placa: </TD>
-                    <TD colspan="2"> </TD>
-                </TR>
-        </table>
-        </form>           
-        </div>
-        
-        <div>
-        <form method="post">
+        <div class="dimensionesRow">
             
-            <table>
-                 
-                <th colspan="3"> Mantenimiento </th>
-                <tr>
-                    <td> Antigüedad: </td>
-                    <td> <input type="text" name="age"> </td>
-                    <td> Años </td>
-                </tr>
-                
-                <tr>
-                    <td> Condiciones actuales del equipo: </td>
-                    <td colspan="2"> Sucio </td>
-                </tr>
-                
-                <tr>
-                    <td> Ciclo de operación: </td>
-                    <td> <input type="text" name="cicloOperacion"> </td>
-                    <td> [horas/día] </td>
-                </tr>
-                
-                <tr>
-                    <td> Días de operacion al año: </td>
-                    <td colspan="2"> <input type="text" name="diasOperacion"> </td>
-                </tr>
-                
-                <tr>
-                    <td> ¿Existe programa de mantenimiento? </td>
-                    <td>
-                        <select>
-                            <option value="Si"> Si </option>
-                            <option value="No"> No </option>
-                        </select>
-                    </td>
-                </tr>
-                
-                <div>
-                    <tr>
-                        <td> Ultimo mantenimiento: </td>
-                        <td><input type="date"> </td>
-                    </tr>
-                    
-                    <tr>
-                        <td> Tipo de mantenimiento: </td>
-                        <td> Preventivo </td>
-                    </tr>
-                    
-                    <tr>
-                        <td> Descripcion General </td>
-                        <td> <textarea rows="4" cols="25"> </textarea> </td>
-                    </tr>
-                </div>
-                
-            </table>
-                
-        </form>
+            <div class="dimensionesColumna">
+                <h2> DATOS DE FACTURACIÓN ELÉCTRICA </h2>
+            </div>
+            <div class="dimensionesColumna">
+                Precio promedio tarifa:<br>
+                <input type="text" name="precioTarifa" placeholder="($/KWh)"><br>
+                Tarifa:
+                    <select>
+                        <option value="Om"> OM </option>
+                        <option value="HM"> HM </option>
+                    </select>
+            </div>
+            <button type="button" class="navButton"><i class="material-icons">chevron_right</i></button>
         </div>
         
+        
+        <div class="dimensionesRow">
+            <button type="button" class="navButton"><i class="material-icons">chevron_left</i></button>
+            <div class="dimensionesColumna">
+                <h2>Datos de placa</h2>
+                <input type="text" placeholder="Tipo de equipo" value="Minisplit"><br>
+                <input type="text" placeholder="Marca" value="Prime"><br>
+                <input type="text" placeholder="Refrigerante" value="R-22"><br>
+                <input type="text" placeholder="ERR por datos de placa">
+            </div>
+            <div class="dimensionesColumna">
+                <input type="text" placeholder="Capacidad de enfriamiento (Btu/h)"><br>
+                <input type="text" placeholder="Potencia activa (W)"><br>
+                <input type="text" placeholder="Pot. activa por tension y corriente (W)" value="238.4"><br>
+                <input type="text" placeholder="Tensión (V)"><br>
+                <input type="text" placeholder="Corriente nominal (A)"><br>
+            </div>
+            <button type="button" class="navButton"><i class="material-icons">chevron_right</i></button>
+        </div>
+        
+        <div class="dimensionesRow">
+            <button type="button" class="navButton"><i class="material-icons">chevron_left</i></button>
+            <div class="dimensionesColumna">
+                <h2>Mantenimiento</h2>
+                <input type="text" placeholder="Antigüedad en años"><br>
+                <input type="text" placeholder="Condiciones actuales del equipo"><br>
+                <input type="text" placeholder="Dias de operación al año">
+                ¿Existe programa de mantenimiento?<br>
+                <select>
+                    <option value="Si"> Si </option>
+                    <option value="No"> No </option>
+                </select><br>
+                
+            </div>
+            <div class="dimensionesColumna">
+                
+                Último mantenimiento:<br>
+                <input type="date"><br>
+                Tipo de Mantenimiento:<br>
+                <select>
+                    <option>Preventivo</option>
+                    <option>Correctivo</option>
+                    <option>Predictivo</option>
+                </select>
+                Descripción general:<br>
+                <textarea rows='5' cols='25' placeholder="Describe el mantenimiento aquí"></textarea>
+            </div>
+            <button type="button" class="navButton"><i class="material-icons">chevron_right</i></button>
+        </div>
+        
+        
         <div>
-            <form method="post">
+            
                             
                 <table>
                     <tr>
@@ -247,7 +173,7 @@
                     </tr>
                     
                 </table>
-            </form>
+            
         </div>
         
     </body>
