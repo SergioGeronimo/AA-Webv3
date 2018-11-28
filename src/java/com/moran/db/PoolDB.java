@@ -9,14 +9,14 @@ import java.sql.SQLException;
  * @author Angel Adiel Moran tuz.
  */
 public class PoolDB {
-    private Connection con = null;
+    private static Connection con = null;
     private final String URL = "jdbc:mysql://localhost:3306/aire_acondicionado";
     private final String driver = "com.mysql.cj.jdbc.Driver";
     private final String user = "root";
     private final String password = "";
     
     private static PoolDB pool;
-    private  ComboPooledDataSource cpds;
+    private  static ComboPooledDataSource cpds;
     
     private PoolDB(){
         try {
@@ -38,7 +38,7 @@ public class PoolDB {
         return pool;
     }
     
-    public Connection getCon(){
+    public static Connection getCon(){
         try{
             
             con = cpds.getConnection();
